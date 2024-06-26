@@ -1,3 +1,10 @@
+const headlines = async () => {
+  const response = await fetch("https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=2b3cfc5f297f4064b1be2e36609dede9")
+  const data = await response.json()
+  const article = data.articles;
+  showNews(article)
+}
+
 const showNews = (articles) => {
   const mainContainer = document.getElementById("mainContainer");
   mainContainer.innerHTML = "";
