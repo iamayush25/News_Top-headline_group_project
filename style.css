@@ -1,0 +1,48 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    /* width: 98vw; */
+}
+#headText{
+    /* border: 2px solid black; */
+    width: 98vw;
+    text-align: center;
+    font-size: 80px;
+    font-family:serif;
+    margin-top: 0%;
+    margin-bottom: 2%;
+
+}
+#searchBox{
+    width: 98vw;
+    /* border: 2px solid black; */
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    text-align: center;
+
+}
+#searchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 2%;
+    /* border: 2px solid black;  */
+}
+#findInput{
+    font-size: 17px;
+    width: 220px;
+    height: 50px;
+    font-weight: bold;
+    border-style: none;
+    outline: none;
+}
+#Btn{
+    width:47px;
+    height: 54px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(239, 60, 60);
+    border-style: none;
+    font-family:inherit;
+    font-size: larger;
+}
