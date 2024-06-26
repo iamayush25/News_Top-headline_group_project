@@ -19,3 +19,15 @@ const showNews = (articles) => {
         </div>`;
   });
 };
+
+const searchNews = async () => {
+  const findNews = document.getElementById("findInput").value
+  const res = await fetch(`https://newsapi.org/v2/everything?q=${findNews}&from=yyyy-mm-dd&sortBy=publishedAt&apiKey=2b3cfc5f297f4064b1be2e36609dede9`)
+  const data = await res.json()
+  const article = await data.articles;
+  console.log(article);
+
+  showNews(article)
+}
+
+headlines()
