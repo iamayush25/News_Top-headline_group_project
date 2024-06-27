@@ -1,19 +1,21 @@
-body{
+body {
     padding: 0%;
     margin: 0%;
     /* width: 98vw; */
 }
-#headText{
+
+#headText {
     /* border: 2px solid black; */
     width: 98vw;
     text-align: center;
     font-size: 80px;
-    font-family:serif;
+    font-family: serif;
     margin-top: 0%;
     margin-bottom: 2%;
 
 }
-#searchBox{
+
+#searchBox {
     width: 98vw;
     /* border: 2px solid black; */
     margin-top: 1.5%;
@@ -21,14 +23,16 @@ body{
     text-align: center;
 
 }
+
 #searchBox {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     margin-top: 2%;
     /* border: 2px solid black;  */
 }
-#findInput{
+
+#findInput {
     font-size: 17px;
     width: 220px;
     height: 50px;
@@ -36,13 +40,75 @@ body{
     border-style: none;
     outline: none;
 }
-#Btn{
-    width:47px;
+
+#Btn {
+    width: 47px;
     height: 54px;
     font-weight: bold;
     color: white;
     background-color: rgb(239, 60, 60);
     border-style: none;
-    font-family:inherit;
+    font-family: inherit;
     font-size: larger;
+}
+
+#mainContainer {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.innerBox {
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    flex-grow: 2;
+    flex-basis: 200;
+}
+
+#newsLogo {
+    height: 6rem;
+
+}
+
+.getNews {
+    width: 350px;
+    padding: 10px;
+    /* border: 2px solid rgb(87, 87, 87); */
+}
+
+.articleImg {
+    width: 100%;
+}
+
+#Btn:hover {
+    background-color: rgb(235, 66, 66);
+}
+
+#headText:hover {
+    color: rgb(74, 71, 162);
+}
+
+#show-Headline-news {
+    /* border: 2px solid black; */
+    width: 85vw;
+    height: 5vh;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    padding-left: 10%;
+}
+
+#set-icon {
+    border: 1px solid rgb(23, 23, 23);
+    padding-left: 1%;
+}
+
+@media screen and (max-width: 426px) {
+    #headText {
+        font-size: 30px;
+    }
 }
