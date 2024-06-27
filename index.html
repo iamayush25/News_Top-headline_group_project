@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Top-headline</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-    
-    <script src="./index.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>News Top-headline</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <div id="headContainer">
+            <p id="headText"> News API<i class="fa-solid fa-circle fa-2xs"
+                    style="color: #ee3737;"></i>Org </p>
+            <hr>
+            <hr>
+            <div id="searchBox">
+                <span id="set-icon">
+                    <i class="fa-solid fa-magnifying-glass" id="icon"
+                        style="color: #616161;"></i>
+                    <input id="findInput" type="text" placeholder="Search News">
+                </span>
+                <button id="Btn" onclick="searchNews()">Go</button>
+            </div>
+
+            <div id="show-Headline-news">TOP NEWS FROM INDIA </div>
+        </div>
+        <div id="mainContainer"></div>
+        <script src="./index.js"></script>
+    </body>
 </html>
